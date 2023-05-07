@@ -67,7 +67,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>    
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="text" name="password" class="input-area" required>
+                    <input type="password" name="password" class="input-area" required>
                 </div>
                 <a href="signup.php" style="float: right; color: #fff">Sign up</a>
                 <div class="form-group1">
