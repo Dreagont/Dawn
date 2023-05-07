@@ -169,7 +169,7 @@ img {
     display: flex;
     color:#fff;
     line-height: 60px;
-    padding-left: 10px; 
+    padding-left: 2px; 
     transition:all .2s ease-in-out;
 }
 
@@ -177,7 +177,7 @@ img {
     background-color:var(--main-color);
     color: #fff;
     border-radius: 20px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 ----------------------------------------------------
 .nav-wrapper .genre-item {
@@ -570,8 +570,8 @@ a.movie-item:hover {
 
 .movie-item-title {
      color: var(--text-color);
-     font-size: 1.5rem;
-     font-weight: 600;
+     font-size: 1.4rem;
+     font-weight: 500;
      position: relative;
      text-transform: capitalize;
      text-align: center;

@@ -60,6 +60,7 @@
 			padding: 10px;
 			justify-content: center;
 			align-items: center;
+			overflow: scroll;
 		}
 		.btn {
 			background-color: green;

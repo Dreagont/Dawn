@@ -1,0 +1,1 @@
+If login with username = admin and pass = 123456 user can go direct to admin site which can manage all the request data.

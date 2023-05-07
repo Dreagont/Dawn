@@ -83,7 +83,7 @@
               echo '<p style = "user-select:none">
               <span>Wellcome '. $_SESSION["username"]; '</span> </p>';
             } else {
-              echo '<a href="http://localhost/Final/login.php" class="btn btn-hover">
+              echo '<a href="login.php" class="btn btn-hover">
               <span>log in</span>
             </a>';
             }
@@ -195,132 +195,6 @@
             </div>
           </div>
         </div>
-
-        <div class="big-slide-item">
-          <img src="./assets/img/Images/p-6.jpg" alt="Poster" />
-
-          <div class="big-slide-item-content">
-            <div class="item-content-wrapper">
-              <div class="item-content-title">black widow</div>
-
-              <div class="movies-infors">
-                <div class="movies-infor">
-                  <ion-icon name="bookmark-outline"></ion-icon>
-                  <span>9.5</span>
-                </div>
-                <div class="movies-infor">
-                  <ion-icon name="time-outline"></ion-icon>
-                  <span>120 mins</span>
-                </div>
-                <div class="movies-infor">
-                  <ion-icon name="cube-outline"></ion-icon>
-                  <span>FHD</span>
-                </div>
-              </div>
-
-              <div class="item-content-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                possimus eius. Deserunt non odit, cum vero reprehenderit
-                laudantium odio vitae autem quam, incidunt molestias ratione
-                mollitia accusantium, facere ab suscipit.
-              </div>
-            </div>
-          </div>
-
-          <div class="play-movies">
-            <div class="ring"></div>
-            <a href="https://www.youtube.com/watch?v=ybji16u608U">
-              <i class="bx bxs-right-arrow"></i>
-            </a>
-            <div class="btn-watch">
-              <span>watch trailer</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="big-slide-item">
-          <img src="./assets/img/Images/transformer-banner.jpg" alt="Poster" />
-
-          <div class="big-slide-item-content">
-            <div class="item-content-wrapper">
-              <div class="item-content-title">Transformer</div>
-
-              <div class="movies-infors">
-                <div class="movies-infor">
-                  <ion-icon name="bookmark-outline"></ion-icon>
-                  <span>9.5</span>
-                </div>
-                <div class="movies-infor">
-                  <ion-icon name="time-outline"></ion-icon>
-                  <span>120 mins</span>
-                </div>
-                <div class="movies-infor">
-                  <ion-icon name="cube-outline"></ion-icon>
-                  <span>FHD</span>
-                </div>
-              </div>
-
-              <div class="item-content-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                possimus eius. Deserunt non odit, cum vero reprehenderit
-                laudantium odio vitae autem quam, incidunt molestias ratione
-                mollitia accusantium, facere ab suscipit.
-              </div>
-            </div>
-          </div>
-
-          <div class="play-movies">
-            <div class="ring"></div>
-            <a href="https://www.youtube.com/watch?v=Q3VKie4pChs">
-              <i class="bx bxs-right-arrow"></i>
-            </a>
-            <div class="btn-watch">
-              <span>watch trailer</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="big-slide-item">
-          <img src="./assets/img/Images/p-3.jpg" alt="Poster" />
-
-          <div class="big-slide-item-content">
-            <div class="item-content-wrapper">
-              <div class="item-content-title">bloodShot</div>
-
-              <div class="movies-infors">
-                <div class="movies-infor">
-                  <ion-icon name="bookmark-outline"></ion-icon>
-                  <span>9.5</span>
-                </div>
-                <div class="movies-infor">
-                  <ion-icon name="time-outline"></ion-icon>
-                  <span>120 mins</span>
-                </div>
-                <div class="movies-infor">
-                  <ion-icon name="cube-outline"></ion-icon>
-                  <span>FHD</span>
-                </div>
-              </div>
-
-              <div class="item-content-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                possimus eius. Deserunt non odit, cum vero reprehenderit
-                laudantium odio vitae autem quam, incidunt molestias ratione
-                mollitia accusantium, facere ab suscipit.
-              </div>
-            </div>
-          </div>
-
-          <div class="play-movies">
-            <div class="ring"></div>
-            <a href="https://www.youtube.com/watch?v=vOUVVDWdXbo">
-              <i class="bx bxs-right-arrow"></i>
-            </a>
-            <div class="btn-watch">
-              <span>watch trailer</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="section" id="trending">
@@ -354,9 +228,9 @@
           </a>
           <a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/spiderman.jpg" alt="" />
+              <img src="./image/thedevildeal.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">Spiderman</div>
+                <div class="movie-item-title">The Devils Deal</div>
                 <div class="movies-infors-card">
                   <div class="movies-infor">
                     <ion-icon name="time-outline"></ion-icon>
@@ -375,9 +249,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/spiderman.jpg" alt="" />
+              <img src="./image/thecovenant.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">Spiderman</div>
+                <div class="movie-item-title">The Covenant</div>
                 <div class="movies-infors-card">
                   <div class="movies-infor">
                     <ion-icon name="time-outline"></ion-icon>
@@ -396,9 +270,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/spiderman.jpg" alt="" />
+              <img src="./image/galaxy.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">Spiderman</div>
+                <div class="movie-item-title">Guardians of the Galaxy</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -418,9 +292,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/spiderman.jpg" alt="" />
+              <img src="./image/highway.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">Spiderman</div>
+                <div class="movie-item-title">Highway Family</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -440,9 +314,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/spiderman.jpg" alt="" />
+              <img src="./image/accured.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">Spiderman</div>
+                <div class="movie-item-title">The Accursed</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -462,9 +336,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/spiderman.jpg" alt="" />
+              <img src="./image/sisu.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">Spiderman</div>
+                <div class="movie-item-title">Sisu</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -484,9 +358,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/spiderman.jpg" alt="" />
+              <img src="./image/silence.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">Spiderman</div>
+                <div class="movie-item-title">Sound of Silence</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -540,9 +414,9 @@
           </a>
           <a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/deadpool2.jpg" alt="" />
+              <img src="./image/refie.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">deadpool 2</div>
+                <div class="movie-item-title">Renfield</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -562,9 +436,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/deadpool2.jpg" alt="" />
+              <img src="./image/master.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">deadpool 2</div>
+                <div class="movie-item-title">The Sorcery Master</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -584,9 +458,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/deadpool2.jpg" alt="" />
+              <img src="./image/annu.png" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">deadpool 2</div>
+                <div class="movie-item-title">Annular Eclipse</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -606,9 +480,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/deadpool2.jpg" alt="" />
+              <img src="./image/pope.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">deadpool 2</div>
+                <div class="movie-item-title">The Popes Exorcist</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -628,9 +502,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/deadpool2.jpg" alt="" />
+              <img src="./image/flute.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">deadpool 2</div>
+                <div class="movie-item-title">The Magic Flute</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -650,9 +524,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/deadpool2.jpg" alt="" />
+              <img src="./image/clock.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">deadpool 2</div>
+                <div class="movie-item-title">Clock</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
@@ -672,9 +546,9 @@
             </div> </a
           ><a href="moviepage.php" class="movie-item col-3 m-5">
             <div>
-              <img src="./image/deadpool2.jpg" alt="" />
+              <img src="./image/club.jpg" alt="" />
               <div class="movie-item-content">
-                <div class="movie-item-title">deadpool 2</div>
+                <div class="movie-item-title">Assassin Club</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
