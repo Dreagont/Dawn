@@ -157,7 +157,7 @@
         </li>
       </ul>
     </div>
-    <div class="section" id="trending">
+    <div class="sections" id="trending">
       <div class="section-wrapper" id="section-wrapper">
         <div class="section-header">Result movies</div>
         <div class="movies-slide row">
