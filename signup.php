@@ -94,11 +94,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="text" name="password" class="input-area" required>
+                <input type="password" name="password" class="input-area" required>
             </div>
             <div class="form-group">
                 <label>Confirm password</label>
-                <input type="text" name="sndpassword" class="input-area" required>
+                <input type="password" name="sndpassword" class="input-area" required>
             </div>
             <div class="form-group1">
                 <input type="submit" class="login-btn" value="Sign up">
