@@ -19,8 +19,13 @@
     $username = $_SESSION["username"];
     $sql = "INSERT INTO bogia(`username`,`comment`) values ('$username','$comment')";
   	$result = mysqli_query($conn, $sql);
+    header("Location: moviepage.php");
+    exit();
   }
+
+  
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -121,14 +126,45 @@
               BỐ GIÀ là một bộ phim Web drama tình cảm gia đình, một dự án phim
               hài Tết 2020 của Trấn Thành
             </p>
-            <div class="star-rater">
-            <input type="radio" id="star5" name="rating" value="5">
-            <input type="radio" id="star4" name="rating" value="4">
-            <input type="radio" id="star3" name="rating" value="3">
-            <input type="radio" id="star2" name="rating" value="2">
-            <input type="radio" id="star1" name="rating" value="1">
-            </div>
-          </div>
+            <?php
+      if (isset($_SESSION["loggedin"])) {
+        $username = $_SESSION['username'];
+        $sql = 'select `like` from likemark where username="'.$username.'"';
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+        if ($row['like'] == 0) {
+          $likea = false;
+        } else {
+          $likea = true;
+        }
+        
+        $sql = 'SELECT COUNT(*) AS likes FROM likemark WHERE `like` = 1';
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+        $likes = $row['likes'];
+        echo '
+        <p>Likes:
+           '.$likes.' 
+        </p>
+        <button class="movie-card-btn likemark" onclick="like()">Like</button>';
+        
+
+        $sql = 'select `mark` from likemark where username="' . $username . '"';
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+        if ($row['mark'] == 0) {
+          $marka = false;
+        } else {
+          $marka = true;
+        }
+        echo '
+        <button class="movie-card-btn likemark" onclick="mark()">';
+        if (isset($_SESSION['save'])) {
+          echo $_SESSION['save'];
+        } else {echo 'Save';}
+        echo '</button>';
+      }
+      ?>
         </div>
       </div>
     </section>
@@ -217,7 +253,32 @@
         </div>
       </div>
     </footer>
-
+    <script>
+              function like() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                    location.reload();
+                  }
+                };
+                xhttp.open("POST", "like.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("like=<?php echo $likea ? '0' : '1'; ?>&username=<?php echo $username; ?>");
+              }
+    </script> 
+    <script>
+              function mark() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                    location.reload();
+                  }
+                };
+                xhttp.open("POST", "mark.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("mark=<?php echo $marka ? '0' : '1'; ?>&username=<?php echo $username; ?>");
+              }
+    </script> 
     <script src="main.js"></script>
   </body>
 </html>

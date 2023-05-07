@@ -94,9 +94,9 @@
 	$sql = "SELECT * FROM `genres`";
 	$result = mysqli_query($conn, $sql);
 	if (mysqli_num_rows($result) > 0) {
-		echo "<table border='1'><tr><th>Name</th><th>Action</th></tr>";
+		echo "<table border='1'><tr><th>Name</th><th>Icon</th><th>Action</th></tr>";
 		while ($row = mysqli_fetch_assoc($result)) {
-			echo "<tr><td>" . $row["genrename"] . "</td><td><a href='delete.php?deletegenre=" . $row["genrename"] . "'>Delete</a></td></tr>";
+			echo "<tr><td>" . $row["genrename"] . "</td><td>" . $row["genreicon"] . "</td><td><a href='delete.php?deletegenre=" . $row["genrename"] . "'>Delete</a></td></tr>";
 		}
 		echo "</table>";
 	} else {
@@ -120,7 +120,21 @@
 	}
 	?>
 	</div>
-	<div class="item">Content 4</div>
+	<div class="item">
+		<h1>Movie Information Manage</h1>
+	<?php
+	$sql = "SELECT * FROM `movies`";
+	$result = mysqli_query($conn, $sql);
+	if (mysqli_num_rows($result) > 0) {
+		echo "<table border='1'><tr><th>Name</th><th>Genre</th><th>Displayname</th><th>Action</th></tr>";
+		while ($row = mysqli_fetch_assoc($result)) {
+			echo "<tr><td class = 'name'>" . $row["moviename"] . "</td><td class = 'genre'>" . $row["genre"] . "</td><td class = 'display'>" . $row["displayname"] . "</td><td><a href='delete.php?deletecomment=" . $row["moviename"] . "'>Delete</a></td></tr>";
+		}
+		echo "</table>";
+	} else {
+		echo " 0 results";
+	}
+	?>
 	</div>
 
 	

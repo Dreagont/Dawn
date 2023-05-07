@@ -147,7 +147,7 @@ img {
     border-radius: 10px;
     border: 2px solid var(--main-color);
     margin:0 3rem;
-    transition: all .4s ease-in-out;
+    
 
 }
 
@@ -179,7 +179,7 @@ img {
     padding: 8px 15px;
     border: 1px solid var(--text-color);
     border-radius: 20px;
-    transition: all .4s ease-in-out;
+    
     background-color: var(--second-color);
     overflow: hidden;
     position: relative;
@@ -196,7 +196,7 @@ img {
     height: 0;
     transform: translate(-50%, -50%) rotate(-45deg);
     background-color: var(--main-color);
-    transition: .4s ease-in-out;
+    
     z-index: -1;
 }
 
@@ -225,7 +225,6 @@ img {
     height: 100px;
     position: relative;
     display: inline-block;
-    transition: all 0.4s ease-in-out;
 }
 
 .movie-cast-item:hover {
@@ -248,7 +247,6 @@ img {
     margin: 0 auto;
     position: relative;
     margin: 8rem  auto 30px;
-    transition: all .8s ease-in-out;
 }
 
 
@@ -262,7 +260,7 @@ img {
     margin: 30px;
     width: 300px;
     border-left: 5px solid var(--main-color);
-    transition: all .4s ease-in-out;
+    
     transform-origin: top left;
 }
 

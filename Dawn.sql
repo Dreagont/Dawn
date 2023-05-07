@@ -33,8 +33,6 @@ SET time_zone = "+00:00";
 CREATE TABLE `bogia` (
   `username` varchar(64) NOT NULL,
   `comment` text NOT NULL,
-  `ratescore` int(100) DEFAULT 0,
-  `mark` int(100) DEFAULT 0,
   `commentid` int(100) AUTO_INCREMENT PRIMARY KEY
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -53,7 +51,7 @@ INSERT INTO `bogia` (`username`, `comment`) VALUES
 --
 
 CREATE TABLE `genres` (
-  `genrename` varchar(64) NOT NULL,
+  `genrename` varchar(64) NOT NULL PRIMARY KEY,
   `genreicon` varchar(64) NOT NULL,
   `displayname` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -76,7 +74,7 @@ INSERT INTO `genres` (`genrename`, `genreicon`, `displayname`) VALUES
 --
 
 CREATE TABLE `movies` (
-  `moviename` varchar(64) NOT NULL,
+  `moviename` varchar(64) NOT NULL PRIMARY KEY,
   `genre` varchar(64) NOT NULL,
   `displayname` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -103,7 +101,7 @@ INSERT INTO `movies` (`moviename`, `genre`, `displayname`) VALUES
 --
 
 CREATE TABLE `users` (
-  `username` varchar(64) NOT NULL,
+  `username` varchar(64) NOT NULL PRIMARY KEY,
   `firstname` varchar(64) NOT NULL,
   `lastname` varchar(64) NOT NULL,
   `email` varchar(64) NOT NULL,
@@ -121,3 +119,8 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE `likemark` (
+  `username` varchar(64) NOT NULL PRIMARY KEY,
+  `like` int(100) DEFAULT 0 ,
+  `mark` int(100) DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

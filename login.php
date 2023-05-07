@@ -1,13 +1,10 @@
 <?php
-// Khởi động phiên làm việc
 session_start();
-// Kiểm tra xem người dùng đã đăng nhập hay chưa
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: index.php");
     exit;
 }
 
-// Kết nối tới cơ sở dữ liệu
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -15,18 +12,18 @@ $dbname = "Dawn";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-// Xử lý dữ liệu khi người dùng bấm nút Đăng nhập
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
-    // Lấy giá trị từ form đăng nhập
     $username = $_POST["username"];
     $password = mysqli_real_escape_string($conn,$_POST["password"]);
-    // Kiểm tra tài khoản và mật khẩu trong cơ sở dữ liệu
+    if ($username == 'admin' && $password == '123456') {
+        header("location: delete.php");
+        
+    }
     $sql = "SELECT * FROM users WHERE username = '".$username."' and password = '".$password."';";
     $result = $conn->query($sql);
     $count = mysqli_num_rows($result);
     
-    // Nếu tài khoản và mật khẩu đúng, đăng nhập thành công và chuyển hướng tới trang chào mừng
     if($count){
         $_SESSION["loggedin"] = true;
         $sql = "SELECT lastname FROM users WHERE username = '".$username."' and password = '".$password."';";

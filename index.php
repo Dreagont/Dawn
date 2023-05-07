@@ -187,7 +187,7 @@
 
           <div class="play-movies">
             <div class=""></div>
-            <a href="https://www.youtube.com/watch?v=TcMBFSGVi1c">
+            <a href="moviepage.php">
               <i class="bx bxs-right-arrow"></i>
             </a>
             <div class="btn-watch">

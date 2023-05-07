@@ -34,6 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($password === $sndpassword && $flag == 0) {
         $sql = "INSERT INTO users (username, password, firstname, lastname, email) VALUES ('$username','$password','$firstname','$lastname','$email')";
         $result = $conn->query($sql);
+        $sql = "insert into likemark (username) values ('$lastname')";
+        $result = $conn->query($sql);
         $_SESSION["signin"] = true;
         $_SESSION["username"] = $username;
         header("location: login.php");

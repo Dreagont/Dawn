@@ -36,8 +36,7 @@ myDiv.addEventListener("click", function() {
   }
 });
 
-function confirmLogout() {
-  if (confirm("Are you sure you want to logout?")) {
-      window.location.href = "logout.php";
-  }
-}
+marker.addEventListener("click", function() {
+  var xhttp = new XMLHttpRequest();
+  alert("aassa")
+});
